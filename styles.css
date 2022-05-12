@@ -1,3 +1,69 @@
 body{
   text-align: center;
+  background-color: black;
+  color: white;
+}
+
+
+/* Main Element */
+
+.main-element{
+  vertical-align: middle;
+  margin: 300px 500px 0 500px;
+  border-radius: 25px;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+@media (max-width: 480px) {
+  .main-element {
+    margin-top: 300px;
+    padding-right: 10px;
+    padding-left: 10px; 
+  }
+}
+
+/* Main Element Text */
+
+.Landing-Page-Heading{
+  padding: 30px 0 10px 0;
+  background: linear-gradient(to right, darkblue, darkorchid);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Landing-Page-Heading:hover{
+  font-size : 70px;
+}
+
+.Landing-Page-Text{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Last-Txt{
+  padding-bottom: 15px;
+}
+
+.HMBLMR{
+  background: linear-gradient(to right, darkblue, darkorchid);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/*Input Element */
+#input-el{
+  padding: 10px 30px 10px 30px ;
+}
+
+/*Submit Button */
+#submit-btn{
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 30px;
+  border-radius: 23px;
+  background: linear-gradient(to right, darkblue, darkorchid);
+  color: white;
+  font-weight: 100;
 }

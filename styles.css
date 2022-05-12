@@ -1,3 +1,177 @@
 body{
   text-align: center;
+  background-color: yellow;
+  color: white;
+}
+
+
+/* ------------------------------- Main Element ------------------------------- */
+
+.main-element{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 200px;
+  padding: 50px 0 50px 0;
+  box-shadow: 0 0 24px 0 rgba(178, 183, 29, 0.8), 0 1px 0 0 rgba(157, 162, 16, 0.8);
+  border-radius: 30px;
+}
+
+/* ------------------------------------------------------------------------------ Media Queries -------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------- TO DO: ADD MEDIA QUERIES FOR SAMSUNG/GALAXY DEVICES ----------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  .main-element {
+    margin-top: 200px;
+  }
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .main-element {
+      padding-top: 0px;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .main-element {
+      margin-top: 300px;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .main-element {
+      padding-top: 0px;
+    }
+
+}
+
+
+
+
+/* -- iPhone 6+, 7+ and 8+ -- */
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .main-element {
+      margin-top: 350px;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .main-element {
+      padding-top: 0px;
+    }
+
+}
+
+
+
+/* -- iPhone X -- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .main-element {
+      padding-top: 0px;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .main-element {
+      margin-top: 400px;
+      padding-left: 150px;
+      padding-right: 150px;
+      
+    }
+
+}
+
+
+
+
+/*-----------------------------------END OF MEDIA QUERIES ----------------------------------- */
+
+/* --------- Main Element Text --------- */
+
+.Landing-Page-Heading{
+  padding: 50px 0 10px 0;
+  background: linear-gradient(to right, darkblue, darkorchid);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Landing-Page-Heading:hover{
+  font-size : 70px;
+}
+
+.Landing-Page-Text{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Last-Txt{
+  padding-bottom: 15px;
+}
+
+
+
+/*----------------------------------- Input Element ----------------------------------- */
+#input-el{
+  padding: 10px 30px 10px 30px ;
+  border-radius: 15px;
+  border: none;
+}
+
+/* ----------------------------------- Submit Button ----------------------------------- */
+#submit-btn{
+  padding: 20px 50px 20px 50px;
+  margin-bottom: 50px;
+  border-radius: 23px;
+  background: linear-gradient(to right, darkblue, darkorchid);
+  color: white;
+  font-weight: bold;
+  border: none;
 }

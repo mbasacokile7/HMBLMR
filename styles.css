@@ -141,19 +141,29 @@ body{
   background: linear-gradient(to right, darkblue, darkorchid);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: font-size 2s;
 }
 
-.Landing-Page-Heading:hover{
+.Landing-Page-Heading:hover, .Landing-Pag-Heading:active{
   font-size : 70px;
 }
 
 .Landing-Page-Text{
   padding-top: 10px;
   padding-bottom: 10px;
+  color: darkorchid;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: 6;
 }
 
-.Last-Txt{
-  padding-bottom: 15px;
+@keyframes example {
+  0%   {color: #800080;}
+  20%  {color: #600060;}
+  40%  {color: #400040;}
+  60% {color: #200020;}
+  80% {color: #000000;}
+  100% {color: darkorchid;}
 }
 
 
@@ -163,6 +173,7 @@ body{
   padding: 10px 30px 10px 30px ;
   border-radius: 15px;
   border: none;
+  text-align:left; 
 }
 
 /* ----------------------------------- Submit Button ----------------------------------- */

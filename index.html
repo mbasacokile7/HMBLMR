@@ -21,7 +21,7 @@
    
 
   
-     <div class = "main-element">
+     <div class = "main-element page">
           
       <h1 class = "Landing-Page-Heading">HMB,LMR</h1>
       <br>
@@ -29,7 +29,7 @@
         
       <input type="text" id="input-el" placeholder = "Enter Password"> <br>
       <br>
-      <button type="button" name="button" onclick="submit_fn()" id="submit-btn">SUBMIT</button>
+      <button type="button" name="button" onclick="submit_fn()" id="submit-btn" class = "button-submit">SUBMIT</button>
       
             
           
@@ -42,15 +42,20 @@
   <!-------------------Details Form Section ------------------->
 
   <section id="Details-Form">
-    <div class = "Competition-Form ">
+    <div class = "Competition-Form page">
+      <h2 class = "Landing-Page-Text">ACCESS GRANTED</h2>
+      <br>
+      <h3 class = "Form-text">To claim your prize, enter required information</h3>
+      <br>
+
       <form action="">
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname" placeholder ="First Name"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
-        <label for="lname">Email Address:</label><br>
-        <input type="text" id="lname" name="lname" placeholder ="Email Address"><br><br>
-        <input type="submit" value="Submit">
+        <label for="fname" class = "Form-Label">First Name:</label><br>
+        <input type="text" id="Form-El" name="fname"><br>
+        <label for="lname" class = "Form-Label">Last Name:</label><br>
+        <input type="text" id="Form-El" name="lname"><br>
+        <label for="lname" class = "Form-Label">Email Address:</label><br>
+        <input type="text" id="Form-El" name="lname"><br><br>
+        <input type="submit" value="Submit" id="submit-btn">
       
       </form>
 
@@ -64,6 +69,9 @@
 
 
   <script src="main.js"></script>
+  <script src="js/index.js"></script>
+    <canvas class="background"></canvas>
+    <script src="particles.js-master/dist/particles.min.js"></script>
 </body>
 
 </html>

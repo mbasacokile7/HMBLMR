@@ -104,7 +104,7 @@ for (let i=0; i < singleImages.length ; i++){
   //console.log(singleImages[i])
 
   imagesBody_3 = `
-                <div class = "ep-image">
+                <div class = "singles-image">
                 <img src = ${singleImages[i]} alt  = "single_image_${i}" width = "300" height = "300">
                 </div> 
                 `

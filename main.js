@@ -43,15 +43,76 @@ function submit_fn(){
   
 }
 
-//const pages = document.querySelectorAll(".page");
-    //const translateAmount = 100; 
-    //let translate = 0;
+// ---------------------------------- Catalog Section ---------------------------------- //
 
-    //slide = (direction) => {
+// ----------------- DYNAMICALLY LOADING IMAGES ----------------------------------------//
 
-      //direction === "next" ? translate -= translateAmount : translate += translateAmount;
+// Album Images
 
-      //pages.forEach(
-        //pages => (pages.style.transform = `translateY(${translate}%)`)
-      //);
-    //}
+
+const albumImages = ["MusicImages/Albums/SBC.jpg", "MusicImages/Albums/FMC.jpg", "MusicImages/Albums/imbtL.jpg" ]
+
+let albumEl = document.querySelector(".albums")
+
+let imagesBody
+
+albumEl.style.display = "flex";
+
+for (let i=0; i < albumImages.length ; i++){
+  console.log(albumImages[i])
+
+  imagesBody = `
+                <div class = "album-image">
+                <img src = ${albumImages[i]} alt  = "album_image_${i}" width = "300" height = "300">
+                </div> 
+                `
+  albumEl.innerHTML += imagesBody
+}
+
+// EPs Images
+
+const epImages = ["MusicImages/EPs/P25.jpg", "MusicImages/EPs/PT.jpg"]
+
+let epEl = document.querySelector(".eps")
+
+let imagesBody_2
+
+epEl.style.display = "flex";
+
+for (let i=0; i < epImages.length ; i++){
+  //console.log(epImages[i])
+
+  imagesBody_2 = `
+                <div class = "ep-image">
+                <img src = ${epImages[i]} alt  = "ep_image_${i}" width = "300" height = "300">
+                </div> 
+                `
+  epEl.innerHTML += imagesBody_2
+}
+
+// Singles Images
+
+const singleImages = ["MusicImages/Singles/UPPER.ECHELON..jpg", "MusicImages/Singles/Contemplations.jpg", "MusicImages/Singles/TLU.jpg", "MusicImages/Singles/Redemption25.jpg", "MusicImages/Singles/Winter.jpg", "MusicImages/Singles/OFF.jpg", "MusicImages/Singles/TheSummary.jpg"]
+
+let singlesEl = document.querySelector(".singles")
+
+let imagesBody_3
+
+singlesEl.style.display = "flex";
+
+for (let i=0; i < singleImages.length ; i++){
+  //console.log(singleImages[i])
+
+  imagesBody_3 = `
+                <div class = "ep-image">
+                <img src = ${singleImages[i]} alt  = "single_image_${i}" width = "300" height = "300">
+                </div> 
+                `
+  singlesEl.innerHTML += imagesBody_3
+}
+
+
+
+
+ 
+

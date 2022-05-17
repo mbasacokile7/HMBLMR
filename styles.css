@@ -262,3 +262,57 @@ body{
 .page{
   transition: all 1s;
 }
+
+
+
+/* ---------------------------------- CATALOG PAGE ---------------------------------------- */
+
+/* --------Catalog Parent Div --------*/
+
+.catalog-element{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------Catalog Section Headings --------*/
+
+.section-heading{
+  margin: 15px 0 15px 0;
+  color: #200020;
+}
+
+/* --------Catalog Section Sections --------*/
+
+/* ----- Albums Div ----- */
+
+.albums{
+  margin: 5px 0 5px 0
+
+}
+
+/* ----- EPs Div ----- */
+.eps{
+  margin: 5px 0 5px 0
+
+}
+
+/* ----- Singless Div ----- */
+.singles{
+  margin: 5px 0 20px 0;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+
+img { 
+	transition: all .4s ease-in-out; 
+  margin: 10px 10px 0 10px;
+  border-radius: 7.5%;
+}
+img:hover, img:active { 
+    	transform: scale(1.2); 
+}
+
+

@@ -62,9 +62,7 @@ for (let i=0; i < albumImages.length ; i++){
   console.log(albumImages[i])
 
   imagesBody = `
-                <div class = "album-image">
                 <img src = ${albumImages[i]} alt  = "album_image_${i}" width = "300" height = "300">
-                </div> 
                 `
   albumEl.innerHTML += imagesBody
 }
@@ -83,9 +81,7 @@ for (let i=0; i < epImages.length ; i++){
   //console.log(epImages[i])
 
   imagesBody_2 = `
-                <div class = "ep-image">
                 <img src = ${epImages[i]} alt  = "ep_image_${i}" width = "300" height = "300">
-                </div> 
                 `
   epEl.innerHTML += imagesBody_2
 }
@@ -94,22 +90,34 @@ for (let i=0; i < epImages.length ; i++){
 
 const singleImages = ["MusicImages/Singles/UPPER.ECHELON..jpg", "MusicImages/Singles/Contemplations.jpg", "MusicImages/Singles/TLU.jpg", "MusicImages/Singles/Redemption25.jpg", "MusicImages/Singles/Winter.jpg", "MusicImages/Singles/OFF.jpg", "MusicImages/Singles/TheSummary.jpg"]
 
-let singlesEl = document.querySelector(".singles")
+let singlesEl_1 = document.querySelector(".singles-image-1")
 
 let imagesBody_3
 
-singlesEl.style.display = "flex";
+singlesEl_1.style.display = "flex";
 
-for (let i=0; i < singleImages.length ; i++){
+for (let i=0; i < singleImages.length-2 ; i++){
   //console.log(singleImages[i])
 
   imagesBody_3 = `
-                <div class = "singles-image">
                 <img src = ${singleImages[i]} alt  = "single_image_${i}" width = "300" height = "300">
-                </div> 
                 `
-  singlesEl.innerHTML += imagesBody_3
+  singlesEl_1.innerHTML += imagesBody_3
 }
+
+let singlesEl_2 = document.querySelector(".singles-image-2")
+
+let imagesBody_4
+
+singlesEl_2.style.display = "flex";
+
+for (let i = 5; i<singleImages.length; i++){
+  imagesBody_4 = `
+                  <img src = ${singleImages[i]} alt  = "single_image_${i}" width = "300" height = "300">
+  `
+  singlesEl_2.innerHTML += imagesBody_4
+}
+
 
 
 

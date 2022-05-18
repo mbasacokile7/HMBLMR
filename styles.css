@@ -264,15 +264,33 @@ body{
 }
 
 
+/* ----------------------------------------NAVBAR EDITS ----------------------------------------*/ 
+
+.nav-link, .navbar-brand{
+  font-family: 'Orbitron', sans-serif;
+  color: #400040 !important;
+  transition: color 1.5s !important;
+}
+
+.nav-link:hover,.nav-link:active,.navbar-brand:hover,.navbar-brand:active{
+  color: #CBC3E3 !important;
+}
+
+
+/* ----------------------------------------NAVBAR EDITS ----------------------------------------*/ 
+
+
+
+
 
 /* ---------------------------------- CATALOG PAGE ---------------------------------------- */
 
 /* --------Catalog Parent Div --------*/
-
 .catalog-element{
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 /* --------Catalog Section Headings --------*/
@@ -280,29 +298,53 @@ body{
 .section-heading{
   margin: 15px 0 15px 0;
   color: #200020;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  color: #400040;
+  transition: color 1.5s;
 }
 
+.section-heading:hover, .section-heading:active{
+  color: #CBC3E3;
+}
 /* --------Catalog Section Sections --------*/
+
+
 
 /* ----- Albums Div ----- */
 
 .albums{
-  margin: 5px 0 5px 0
+  margin: 5px 0 5px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 
 }
 
 /* ----- EPs Div ----- */
 .eps{
-  margin: 5px 0 5px 0
+  margin: 5px 0 5px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 
 }
 
 /* ----- Singless Div ----- */
-.singles{
+.singles-image-1{
   margin: 5px 0 20px 0;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+}
+
+.singles-image-2{
+  display: flex !important;
+  align-items: center !important;
+  align-content: center !important;
+  margin: 10px 0 20px 0;
+  flex-wrap: wrap;
+  
 }
 
 

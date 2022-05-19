@@ -54,6 +54,10 @@ body{
       padding-top: 0px;
     }
 
+    .Landing-Page-Text{
+      margin: 0 5px 0 5px;
+    }
+
 }
 
 /* Portrait */
@@ -95,6 +99,10 @@ body{
     .main-element {
       margin-top: 350px;
     }
+    .Landing-Page-Text{
+      margin: 0 5px 0 5px;
+    }
+
 
 }
 
@@ -122,6 +130,8 @@ body{
     .main-element {
       padding-top: 0px;
     }
+    
+
 
 }
 
@@ -137,6 +147,10 @@ body{
       padding-right: 150px;
       
     }
+    .Landing-Page-Text{
+      margin: 0 5px 0 5px;
+    }
+
 
 }
 
@@ -166,15 +180,16 @@ body{
   animation-name: example;
   animation-duration: 3s;
   animation-iteration-count: 36;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes example {
-  0% {color: #301934;}
-  20% {color: #200020;}
-  40%  {color: #400040;}
-  60%  {color: #600060;}
-  80%  {color: darkorchid;}
-  100% {color: #CBC3E3;}
+  0% {font-family: 'Fredoka One', cursive; color: #000000;}
+  20% {font-family: 'Lobster', cursive; color: #090909;}
+  40%  {font-family: 'Permanent Marker', cursive; color: #131313;}
+  0% {font-family: 'Fredoka One', cursive; color: #1A1A1A;}
+  20% {font-family: 'Lobster', cursive; color: #202020;}
+  100%  {font-family: 'Orbitron', sans-serif; color: #000000;}
   
 }
 
@@ -220,7 +235,8 @@ body{
 
 
 .Competition-Form{
-  background-color: yellow;
+  background-color: rgba(255, 255, 255, .15); 
+  backdrop-filter: blur(5px); 
   display: None;
   flex-direction: column;
   justify-content: center;
@@ -228,19 +244,21 @@ body{
   align-content: flex-end;
   margin-left: 200px;
   margin-right: 200px;
-  margin-top: 150px;
+  margin-top: 80px;
   margin-bottom: 200px;
   padding: 50px 0 50px 0;
   box-shadow: 0 0 24px 0 rgba(178, 183, 29, 0.8), 0 1px 0 0 rgba(157, 162, 16, 0.8);
   border-radius: 30px;
   transition:  1s;
+  
 }
 
 
 /* ---- Form-Text ---- */
 
 .Form-text{
-  color: darkmagenta;
+  font-family: 'Fredoka One', cursive;
+  color: black
 }
 
 #Form-El{
@@ -253,11 +271,13 @@ body{
 }
 
 .Form-Label{
+  font-family: 'Orbitron', sans-serif;
   margin-bottom: 20px;
   margin-top: 20px;
-  color: darkmagenta;
+  color: #36454F;
   font-weight: bold;
   font-size: 25px;
+  
 
   
 }
@@ -290,9 +310,18 @@ body{
 
 /* --------Catalog Parent Div --------*/
 .catalog-element{
+  background-color: rgba(255, 255, 255, .15); 
+  backdrop-filter: blur(5px); 
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  
+  padding: 50px 0 50px 0;
+  box-shadow: 0 0 24px 0 rgba(178, 183, 29, 0.8), 0 1px 0 0 rgba(157, 162, 16, 0.8);
+  border-radius: 30px;
   
 }
 

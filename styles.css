@@ -391,3 +391,15 @@ img:hover, img:active {
 }
 
 
+/*--------------------------------- Player Section -------------------*/
+
+
+
+.player-title-art{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: inline;
+
+}
+

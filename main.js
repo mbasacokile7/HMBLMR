@@ -62,7 +62,7 @@ for (let i=0; i < albumImages.length ; i++){
   console.log(albumImages[i])
 
   imagesBody = `
-                <img src = ${albumImages[i]} alt  = "album_image_${i}" width = "300" height = "300">
+                <a href = "player.html#player-heading-${i}"><img src = ${albumImages[i]} alt  = "album_image_${i}"></a>
                 `
   albumEl.innerHTML += imagesBody
 }
@@ -81,7 +81,7 @@ for (let i=0; i < epImages.length ; i++){
   //console.log(epImages[i])
 
   imagesBody_2 = `
-                <img src = ${epImages[i]} alt  = "ep_image_${i}" width = "300" height = "300">
+                <img src = ${epImages[i]} alt  = "ep_image_${i}">
                 `
   epEl.innerHTML += imagesBody_2
 }
@@ -100,7 +100,7 @@ for (let i=0; i < 3 ; i++){
   //console.log(singleImages[i])
 
   imagesBody_3 = `
-                <img src = ${singleImages[i]} alt  = "single_image_${i}" width = "300" height = "300">
+                <img src = ${singleImages[i]} alt  = "single_image_${i}">
                 `
   singlesEl_1.innerHTML += imagesBody_3
 }
